@@ -1,0 +1,90 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Great Vibes', cursive;
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wrapper to center content */
+.wrapper {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Welcome Section */
+.welcome-section {
+    color: white;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Title Text */
+.welcome {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Subtitle Text */
+.cant_wait {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.journey-button {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.journey-button:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .welcome {
+        font-size: 2.2rem;
+    }
+
+    .cant_wait {
+        font-size: 1.2rem;
+    }
+
+    .journey-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome {
+        font-size: 1.8rem;
+    }
+
+    .cant_wait {
+        font-size: 1rem;
+    }
+
+    .journey-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

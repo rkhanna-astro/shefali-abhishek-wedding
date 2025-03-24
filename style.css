@@ -1,0 +1,555 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 2100px;
+    width: 100%;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-attachment: scroll;
+    /* background: url('Black-white-image.jpg') no-repeat center center/cover;
+    /* background-position: center top; */
+    /* background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    overflow-y: auto; 
+    /* overflow-x: hidden;  */
+
+    /* image-rendering: pixelated; */
+    /* image-rendering: -webkit-optimize-contrast; /* Improves image quality */
+    /* image-rendering: -moz-crisp-edges;
+    image-rendering: optimizeQuality; */
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    /* font-size: 1rem; */
+    
+}
+
+/* body.show-background {
+    opacity: 1; 
+  } */
+
+.welcome-section {
+    height: 2100px;
+    width: 1800px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    transition: opacity 1s ease-in-out;
+    overflow: auto; 
+}
+.main_content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
+    /* background: url('shefali_abhishek_best.png') no-repeat center center/cover; */
+    /* display: none; */
+}
+
+.wedding_details {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
+    /* background: url('shefali_abhishek_best.png') no-repeat center center/cover; */
+    /* display: none;
+}
+
+.shefali_abhishek {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
+    /* background: url('shefali_abhishek_best.png') no-repeat center center/cover; */
+    /* display: none; */
+}
+
+.location_details {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
+    /* background: url('shefali_abhishek_best.png') no-repeat center center/cover; */
+    /* display: none; */
+}
+/* .more_about { */
+    /* opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out; */
+    /* background: url('shefali_abhishek_best.png') no-repeat center center/cover; */
+    /* display: none; */
+/* } */
+/* .background-transition {
+    background: url('shefali_abhishek_best.png') no-repeat center center;
+    background-size: cover;
+    animation: fadeIn 1s ease-in forwards;
+} */
+
+/* .background-transition-2 {
+    background: url('2_shefali_abhishek_main.jpg') no-repeat center center;
+    background-size: cover;
+    animation: fadeIn 1s ease-in forwards;
+} */
+
+/* .background-transition-4 {
+    background: url('abhishek_and_shefali.jpeg') no-repeat center center;
+    background-size: cover;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.background-transition-5 {
+    background: url('location_detail.jpeg') no-repeat center center;
+    background-size: cover;
+    animation: fadeIn 1s ease-in forwards;
+} */
+
+.stylish-text {
+  position: absolute;
+  top: 50%; /* Adjust the position as needed */
+  left: 50%; /* Adjust the position as needed */
+  transform: translate(-50%, -50%);
+  color: #fff; /* Text color */
+  font-size: 3em; /* Text size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow to the text */
+  font-weight: bold; /* Makes the text bold */
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+.save_the_date {
+    position: absolute;
+    top: 100px;  /* Adjust distance from the top */
+    left: 50px; /* Adjust distance from the left */
+    text-align: left; /* Align text to the left */
+    font-size: 100px;
+}
+.s_and_a {
+    position: absolute;
+    top: 105px;  /* Adjust distance from the top */
+    left: 900px; /* Adjust distance from the left */
+    text-align: left; /* Align text to the left */
+    font-size: 90px;
+    letter-spacing: 1.2px;
+    
+}
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-family: 'Great Vibes', cursive;
+}
+p {
+    font-size: 1.5rem;
+    font-family: 'Great Vibes', cursive;
+}
+.details {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+.countdown {
+    font-size: 2rem;
+    margin-top: 20px;
+    /* font-weight: bold; */
+    position: absolute;
+    top: 800px;  /* Adjust distance from the top */
+    left: 250px; /* Adjust distance from the left */
+    text-align: left; /* Align text to the left */
+    font-size: 60px;
+}
+.time_sentence {
+    font-size: 2rem;
+    margin-top: 20px;
+    /* font-weight: bold; */
+    position: absolute;
+    top: 700px;  /* Adjust distance from the top */
+    left: 100px; /* Adjust distance from the left */
+    text-align: left; /* Align text to the left */
+    font-size: 60px;
+}
+.wedding_date {
+    position: absolute;
+    top: 300px;  /* Adjust distance from the top */
+    left: 170px; /* Adjust distance from the left */
+    text-align: centre; /* Align text to the left */
+    font-size: 100px;
+}
+.know_more {
+    position: absolute;
+    top: 1200px;  /* Adjust distance from the top */
+    left: 170px; /* Adjust distance from the left */
+    text-align: centre; /* Align text to the left */
+    font-size: 60px;
+}
+.rsvp-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.rsvp-button:hover {
+    background: #f0a500;
+    color: white;
+}
+.button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.button:hover {
+    background: #f0a500;
+    color: white;
+}
+.welcome {
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    font-size: 80px;
+    align-items: center;
+}
+.cant_wait {
+    position: absolute;
+    top: 190px;
+    left: 900px;
+    font-size: 50px;
+}
+.journey-button {
+    position: absolute;
+    top: 300px;
+    left: 1100px;
+display: inline-block;
+padding: 16px 32px;
+font-size: 25px;
+font-family: 'Great Vibes', cursive;
+font-weight: 600;
+text-align: center;
+text-decoration: none;
+background: linear-gradient(45deg, #2c3e50, #34495e); /* Black-grey-bluish gradient */
+color: white;
+border-radius: 100px;
+border: 2px solid transparent;
+transition: all 0.3s ease-in-out;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+letter-spacing: 1.5px;
+}
+
+.details-button {
+    position: absolute;
+    top: 1300px;
+    left: 170px;
+display: inline-block;
+padding: 16px 32px;
+font-size: 25px;
+font-family: 'Great Vibes', cursive;
+font-weight: 600;
+text-align: center;
+text-decoration: none;
+background: linear-gradient(45deg, #2c3e50, #34495e); /* Black-grey-bluish gradient */
+color: white;
+border-radius: 100px;
+border: 2px solid transparent;
+transition: all 0.3s ease-in-out;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+letter-spacing: 1.5px;
+}
+
+.shefali-abhishek-and-family-button {
+    position: absolute;
+    top: 1400px;
+    left: 170px;
+display: inline-block;
+padding: 16px 32px;
+font-size: 25px;
+font-family: 'Great Vibes', cursive;
+font-weight: 600;
+text-align: center;
+text-decoration: none;
+background: linear-gradient(45deg, #2c3e50, #34495e); /* Black-grey-bluish gradient */
+color: white;
+border-radius: 100px;
+border: 2px solid transparent;
+transition: all 0.3s ease-in-out;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+letter-spacing: 1.5px;
+}
+
+.locations-button {
+    position: absolute;
+    top: 1500px;
+    left: 170px;
+display: inline-block;
+padding: 16px 32px;
+font-size: 25px;
+font-family: 'Great Vibes', cursive;
+font-weight: 600;
+text-align: center;
+text-decoration: none;
+background: linear-gradient(45deg, #2c3e50, #34495e); /* Black-grey-bluish gradient */
+color: white;
+border-radius: 100px;
+border: 2px solid transparent;
+transition: all 0.3s ease-in-out;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+letter-spacing: 1.5px;
+}
+
+/* Hover effect */
+.journey-button:hover, .details-button:hover, .shefali-abhishek-and-family-button:hover, .locations-button:hover {
+background: linear-gradient(45deg, #34495e, #2c3e50); /* Inverted gradient on hover */
+transform: scale(1.1);
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Focus effect */
+.journey-button:focus, .details-button:focus, .shefali-abhishek-and-family-button:focus, .locations-button:focus {
+outline: none;
+box-shadow: 0 0 10px rgba(44, 62, 80, 0.6); /* Subtle focus glow */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+.journey-button {
+padding: 12px 24px;
+font-size: 16px;
+}
+}
+
+@media (max-width: 480px) {
+.journey-button {
+padding: 10px 20px;
+font-size: 14px;
+}
+}
+/* Scroll-down container */
+.scroll-down {
+position: fixed;
+bottom: 20px; /* Position at the bottom of the page */
+left: 50%;
+transform: translateX(-50%); /* Center the arrow horizontally */
+text-align: center;
+z-index: 1000; /* Ensure it's above other content */
+opacity: 1; /* Initially visible */
+transition: opacity 0.3s ease; /* Smooth transition for fading out */
+}
+
+/* Scroll arrow styling */
+.scroll-arrow {
+display: inline-block;
+font-size: 36px;
+color: #62d7d8; /* Greyish color matching the button theme */
+animation: bounce 1.5s infinite; /* Animation for bouncing effect */
+text-decoration: none;
+}
+
+.scroll-arrow span {
+font-size: 40px; /* Size of the arrow */
+}
+
+.scroll-text {
+font-size: 12px;
+font-weight: 600;
+letter-spacing: 2px; /* Add extra space between the letters */
+animation: move-text 1.5s infinite; /* Animation for moving text */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+0% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(10px); /* Moves the arrow down */
+}
+100% {
+transform: translateY(0); /* Moves the arrow back up */
+}
+}
+
+/* Hover effect */
+.scroll-arrow:hover {
+color: #ff6347; /* Changes color on hover (orange shade from button theme) */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Container for buttons */
+.details-wedding {
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.details-wedding.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wedding-details-button {
+margin: 0 30px;
+padding: 16px 32px;
+font-size: 25px;
+font-family: 'Great Vibes', cursive;
+font-weight: 600;
+text-align: center;
+text-decoration: none;
+background: linear-gradient(45deg, #2c3e50, #34495e); /* Black-grey-bluish gradient */
+color: white;
+border-radius: 100px;
+border: 2px solid transparent;
+transition: all 0.3s ease-in-out;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+letter-spacing: 1.5px;
+}
+
+.wedding-details-button:hover {
+background: linear-gradient(45deg, #34495e, #2c3e50); /* Inverted gradient on hover */
+transform: scale(1.1);
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.wedding-details-button:focus {
+outline: none;
+box-shadow: 0 0 10px rgba(44, 62, 80, 0.6); /* Subtle focus glow */
+}
+
+/* button:hover {
+    background: #2c3e50;
+} */
+
+/* Sliding Content */
+.wedding-content-container {
+    /* position: fixed; */
+    top: 0;
+    /* right: -100%; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: right 0.8s ease-in-out;
+    overflow: hidden;
+    gap: 20px;
+}
+
+/* Content inside the sliding container */
+.wedding-content {
+    display: block;
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 1s ease-in-out, transform 0.8s ease-in-out;
+    transform: translateX(50px); /* Start slightly to the right */
+}
+
+/* Back button */
+.close-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.background-slide {
+    /* position: absolute;
+    top: 0;
+    right: -100%;
+    width: 1600px;
+    height: 2000px;
+    min-height: 100vh; */
+    background-size: cover;
+    background-position: center;
+    /* transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out; */
+    /* transform: translateX(100%); */
+    /* opacity: 0; */
+    /* overflow-y: auto; */
+}
+
+.background-transition-3 {
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.8s ease-in-out, transform 0.8s ease-in-out;
+    transform: translateX(100%);
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.background-transition-3.active {
+    transform: translateX(0);
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);  /* Dark overlay with transparency */
+    z-index: 1;  /* Position the overlay below content but above the background */
+}
+
+.wrapper {
+    width: 1800px; 
+    height: 2100px;
+    margin: 0 auto;
+    transform-origin: top left;
+}
+
+/* Scale the whole page down on smaller screens */
+@media (max-width: 1440px) {
+    .wrapper {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        transform: scale(0.6);
+    }
+}
+
+/* Ensure no horizontal scroll */
+/* body {
+    overflow-x: hidden;
+} */
