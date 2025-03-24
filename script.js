@@ -16,7 +16,7 @@ window.onload = function() {
     let page = window.location.pathname;
     console.log("Current page:", page);
 
-    if (page.includes("landing.html")) {
+    if (page.includes("index.html")) {
         // sessionStorage.setItem("backgroundImage", "Black-white-image.jpg");
         document.body.style.backgroundImage = "url('Black-white-image.jpg')";
         console.log("Background set to Black-white-image.jpg");
