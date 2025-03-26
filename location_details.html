@@ -2,26 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Wedding Invitation</title>
     <link rel="preload" href="https://fonts.gstatic.com/s/greatvibes/v12/RWmMoKWR9v4ksMfaWd_JN9XFiaE.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .location_details {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .s_and_a {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4rem;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            padding: 0 20px;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            line-height: 1.2;
+            max-width: 90%;
+            word-wrap: break-word;
+        }
+
+        @media (max-width: 768px) {
+            .s_and_a {
+                font-size: 2.5rem;
+                top: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .s_and_a {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="location_details" id="locationDetails">
         <div class="s_and_a">
             Roche Harbor Panchkula
         </div>
-        <!-- <div class="scroll-down" id="scrollDown">
-            <a href="#next-section" class="scroll-arrow">
-              <span class="scroll-text">Scroll down to know more</span>
-              <span>&#8595;</span>
-            </a>
-        </div> -->
     </div>
     
-    <script src="script.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('locationDetails');
+            // Replace with your actual background image
+            container.style.backgroundImage = 'url("location_detail.jpeg")';
+        });
+    </script>
 </body>
 </html>
