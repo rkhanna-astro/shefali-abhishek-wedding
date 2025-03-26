@@ -2,19 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no">
-    <title>Wedding Invitation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Wedding Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preload" href="https://fonts.gstatic.com/s/greatvibes/v12/RWmMoKWR9v4ksMfaWd_JN9XFiaE.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+            height: 100%;
+        }
+
+        body {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        #weddingDetails {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            position: absolute;
+            top: 50px; /* Adjust this value to control how far from the top */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+        }
+
+        .details-wedding {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .wedding-details-button {
+            width: 100%;
+            max-width: 350px;
+            padding: 15px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, rgba(142, 68, 173, 0.7), rgba(155, 89, 182, 0.7));
+            color: white;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .wedding-details-button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, rgba(155, 89, 182, 0.8), rgba(142, 68, 173, 0.8));
+        }
+
+        @media (max-width: 768px) {
+            .wedding-details-button {
+                font-size: 1.2rem;
+                padding: 12px;
+            }
+        }
+
+        /* Prevent image scaling */
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
-    
     <div id="weddingDetails">
-        <!-- Three Buttons -->
-        <!-- <div class="overlay" ></div> -->
-        <!-- <div class="background-overlay"></div> -->
         <div class="details-wedding" id="buttonContainer">
             <button class="wedding-details-button" onclick="goToPage('haldi.html', 'haldi.jpg')">Haldi</button>
             <button class="wedding-details-button" onclick="goToPage('shagna_di_raat.html', '2_shefali_abhishek_main.jpg')">Shagna di Raat</button>

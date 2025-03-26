@@ -2,15 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Wedding Invitation</title>
     <link rel="preload" href="https://fonts.gstatic.com/s/greatvibes/v12/RWmMoKWR9v4ksMfaWd_JN9XFiaE.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #f4f4f4;
+        }
+
+        .wedding-content-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .wedding-content {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            color: #8E44AD;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #050505f9;
+            margin-bottom: 20px;
+        }
+
+        .close-btn {
+            padding: 10px 20px;
+            background-color: #8E44AD;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Playfair Display', serif;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .close-btn:hover {
+            background-color: #9B59B6;
+        }
+
+        @media (max-width: 768px) {
+            .wedding-content {
+                top: 30px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Sliding Content Section -->
     <div class="wedding-content-container" id="contentContainer">
         <div class="background-slide" id="backgroundSlide"></div>
         <div class="wedding-content" id="content1">
@@ -19,6 +108,19 @@
             <button class="close-btn" onclick="hideContent()">Back</button>
         </div>
     </div>
-    <script src="script.js" defer></script>
+    <script>
+        // Sample script in case script.js is not available
+        function hideContent() {
+            // You can customize this function to navigate back or hide the content
+            window.history.back();
+        }
+
+        // Optional: Add background image dynamically
+        document.addEventListener('DOMContentLoaded', () => {
+            const backgroundSlide = document.getElementById('backgroundSlide');
+            // Replace with your actual background image
+            backgroundSlide.style.backgroundImage = 'url("shagan-di-photo (1800 X 2100).png")';
+        });
+    </script>
 </body>
 </html>
