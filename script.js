@@ -18,10 +18,11 @@ window.onload = function() {
 
     if (page.includes("index.html")) {
         // sessionStorage.setItem("backgroundImage", "Black-white-image.jpg");
-        document.body.style.backgroundImage = "url('Black-white-image.jpg')";
+        document.body.style.backgroundImage = "url('new background (website).png')";
+        document.body.style.backgroundSize = "cover";
         console.log("Background set to Black-white-image.jpg");
-        document.body.style.width = "100%";  // Set width of body to 100% of the viewport
-        document.body.style.height = "100%";
+        // document.body.style.width = "100%";  // Set width of body to 100% of the viewport
+        // document.body.style.height = "100%";
         // document.documentElement.style.overflowX = "hidden";
         // document.body.style.width = "1800px";  // Set width of body to 100% of the viewport
         // document.body.style.height = "1500px";
@@ -41,13 +42,13 @@ window.onload = function() {
 
     if (page.includes("main_page.html")) {
         console.log("Main details page detected")
-        document.body.style.backgroundImage = "url('main (1800 X 2100).png')";
+        document.body.style.backgroundImage = "url('main page (website).png')";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center";  // Center the image
         document.body.style.backgroundRepeat = "no-repeat";
         
-        document.body.style.width = "100%";  // Set width of body to 100% of the viewport
-        document.body.style.height = "100%";  // Set height of body to 100% of the viewport height
+        // document.body.style.width = "100%";  // Set width of body to 100% of the viewport
+        // document.body.style.height = "100%";  // Set height of body to 100% of the viewport height
         
         // document.documentElement.style.overflowX = "hidden";  // For <html> element
         // document.body.style.overflowX = "hidden";  // For <body> element
@@ -77,41 +78,41 @@ window.onload = function() {
     }
 
     if (page.includes("shefali_abhishek.html")) {
-        document.body.style.backgroundImage = "url('shefali_abhishek (1800 X 2100).png')";
+        document.body.style.backgroundImage = "url('abhishek_and_shefali (website).jpeg')";
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center";  // Center the image
         document.body.style.backgroundRepeat = "no-repeat";
     
-        document.body.style.width = "100%";  // Set width of body to 100% of the viewport
-        document.body.style.height = "100%";  // Set height of body to 100% of the viewport height
+        // document.body.style.width = "100%";  // Set width of body to 100% of the viewport
+        // document.body.style.height = "100%";  // Set height of body to 100% of the viewport height
 
         document.getElementById("snaDetails").style.opacity = "1";
         document.getElementById("snaDetails").style.visibility = "visible";
     }
 
     if (page.includes("location_details.html")) {
-        document.body.style.backgroundImage = "url('location_detail.jpeg')";
+        document.body.style.backgroundImage = "url('location_detail.png')";
 
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center";  // Center the image
         document.body.style.backgroundRepeat = "no-repeat";
     
-        document.body.style.width = "100%";  // Set width of body to 100% of the viewport
-        document.body.style.height = "100%";  // Set height of body to 100% of the viewport height
+        // document.body.style.width = "100%";  // Set width of body to 100% of the viewport
+        // document.body.style.height = "100%";  // Set height of body to 100% of the viewport height
 
         document.getElementById("locationDetails").style.opacity = "1";
         document.getElementById("locationDetails").style.visibility = "visible";
     }
 
     if (page.includes("haldi.html")) {
-        document.body.style.backgroundImage = "url('haldi (1800 X 2100).png')";
+        document.body.style.backgroundImage = "url('haldi (website).png')";
 
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center";  // Center the image
         document.body.style.backgroundRepeat = "no-repeat";
     
-        document.body.style.width = "100%";  // Set width of body to 100% of the viewport
-        document.body.style.height = "100%";  // Set height of body to 100% of the viewport height
+        // document.body.style.width = "100%";  // Set width of body to 100% of the viewport
+        // document.body.style.height = "100%";  // Set height of body to 100% of the viewport height
 
         document.getElementById("contentContainer").style.opacity = "1";
         document.getElementById("contentContainer").style.visibility = "visible";
@@ -128,28 +129,28 @@ window.onload = function() {
     }
 
     if (page.includes("shagna_di_raat.html")) {
-        document.body.style.backgroundImage = "url('shagan-di-photo (1800 X 2100).png')";
+        document.body.style.backgroundImage = "url('shagna-di-raat (website).png')";
 
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center";  // Center the image
         document.body.style.backgroundRepeat = "no-repeat";
     
-        document.body.style.width = "100%";  // Set width of body to 100% of the viewport
-        document.body.style.height = "100%";  // Set height of body to 100% of the viewport height
+        // document.body.style.width = "100%";  // Set width of body to 100% of the viewport
+        // document.body.style.height = "100%";  // Set height of body to 100% of the viewport height
 
         document.getElementById("contentContainer").style.opacity = "1";
         document.getElementById("contentContainer").style.visibility = "visible";
     }
 
     if (page.includes("shadi.html")) {
-        document.body.style.backgroundImage = "url('marriage (1500 X 1800).png')";
+        document.body.style.backgroundImage = "url('marriage (website).png')";
 
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundPosition = "center";  // Center the image
         document.body.style.backgroundRepeat = "no-repeat";
     
-        document.body.style.width = "100%";  // Set width of body to 100% of the viewport
-        document.body.style.height = "100%";  // Set height of body to 100% of the viewport height
+        // document.body.style.width = "100%";  // Set width of body to 100% of the viewport
+        // document.body.style.height = "100%";  // Set height of body to 100% of the viewport height
 
         document.getElementById("contentContainer").style.opacity = "1";
         document.getElementById("contentContainer").style.visibility = "visible";
